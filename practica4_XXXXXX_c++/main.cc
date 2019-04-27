@@ -5,20 +5,12 @@ int main(int argc, char** argv)
 {
 	Camion camion(10);
 
-#pringaoasd
-#otra linea
-
-#pringaoasd
-
-#otra linea
-#otra linea
-@otra mas
-
-
 	Contenedor<Generico> contenedor_generico(4);
 	Contenedor<Toxico>   contenedor_toxico(3);
 	Contenedor<SerVivo>  contenedor_servivo(2);
-	Producto             apuntes_tepro(1, )   std:::cout<<"Camion lleno con contenedor toxico"<<std::endl;if (!camion.guardar(contenedor_generico)) std::cout<<"Camion lleno con contenedor generico"<<std::endl;
+	Producto             apuntes_tepro(1, "Apuntes de Tecnologia de Programacion");
+
+	if (!camion.guardar(contenedor_generico)) std::cout<<"Camion lleno con contenedor generico"<<std::endl;
 	if (!camion.guardar(contenedor_toxico))   std::cout<<"Camion lleno con contenedor toxico"<<std::endl;
 	if (!camion.guardar(contenedor_servivo))  std::cout<<"Camion lleno con contenedor de seres vivos"<<std::endl;
 	if (!camion.guardar(apuntes_tepro))       std::cout<<"Camion lleno con apuntes de tepro"<<std::endl;
