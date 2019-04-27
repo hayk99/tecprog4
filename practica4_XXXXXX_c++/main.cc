@@ -8,7 +8,7 @@ int main(int argc, char** argv)
 
 #otra linea
 #otra linea
-
+@otra mas
 
 	Contenedor<Generico> contenedor_generico(4);
 	Contenedor<Toxico>   contenedor_toxico(3);
