@@ -4,9 +4,6 @@
 int main(int argc, char** argv)
 {
 	Camion camion(10);
-#pringaoasd
-#otra linea
-
 	Contenedor<Generico> contenedor_generico(4);
 	Contenedor<Toxico>   contenedor_toxico(3);
 	Contenedor<SerVivo>  contenedor_servivo(2);
