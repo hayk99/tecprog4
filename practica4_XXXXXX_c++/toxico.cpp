@@ -5,7 +5,7 @@
  */
 #include "toxico.h"
 
-Toxico::Toxico(const double volumen, const string& nombre) : Contenido(volumen), Toxico::nombre(nombre) {}
+Toxico::Toxico(const double volumen, const string& nombre) : Contenido(volumen), nombre(nombre) {}
 
 Toxico::~Toxico() {}
 

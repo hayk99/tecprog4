@@ -10,8 +10,10 @@
 using namespace std;
 
 class Toxico : public Contenido{
+private:
+	const string nombre;
 public:
-	Toxico(const double volumen);
+	Toxico(const double volumen, const string& nombre);
 	~Toxico();
 	string devolverNombre();
 };

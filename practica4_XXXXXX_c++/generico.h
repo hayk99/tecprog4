@@ -14,5 +14,4 @@ class Generico : public Contenido{
 public:
 	Generico(const double volumen);
 	~Generico();
-	string devolverNombre();
 };

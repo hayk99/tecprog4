@@ -6,6 +6,7 @@
 
 #include "practica4.h"
 #include <iostream>
+using namespace std;
 
 int main(int argc, char** argv)
 {
@@ -15,8 +16,14 @@ int main(int argc, char** argv)
 	Contenedor<Toxico>   contenedor_toxico(3);
 	Contenedor<SerVivo>  contenedor_servivo(2);
 	Producto             apuntes_tepro(1, "Apuntes de Tecnologia de Programacion");
-
-	if (!camion.guardar(contenedor_generico)) std::cout<<"Camion lleno con contenedor generico"<<std::endl;
+	
+	for (int i = 0; i<3; i++){
+		if (!camion.guardar(contenedor_generico)) {
+			cout<<"Camion lleno con contenedor generico"<<endl;
+		}
+		else cout<<"metido crack "<<endl;
+	}
+	/*
 	if (!camion.guardar(contenedor_toxico))   std::cout<<"Camion lleno con contenedor toxico"<<std::endl;
 	if (!camion.guardar(contenedor_servivo))  std::cout<<"Camion lleno con contenedor de seres vivos"<<std::endl;
 	if (!camion.guardar(apuntes_tepro))       std::cout<<"Camion lleno con apuntes de tepro"<<std::endl;
@@ -42,5 +49,6 @@ int main(int argc, char** argv)
 	//contenedor_generico.guardar(camion); //Esto no deberia compilar
 	//contenedor_toxico.guardar(otro_contenedor_toxico); //Esto no deberia compilar
 	//contenedor_servivo.guardar(otro_contenedor_servivo); //Esto no deberia compilar
+	*/
 }
 

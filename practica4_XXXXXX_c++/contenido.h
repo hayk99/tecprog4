@@ -5,13 +5,14 @@
  */
 #pragma once
 
+#include <string>
 using namespace std;
 
 class Contenido{
 protected:
-	const double volumen;
+	double volumen;
 public:
-	Contenido(const double volumen);
+	Contenido(double volumen);
 	~Contenido();
 	double devolverVolumen();
 };

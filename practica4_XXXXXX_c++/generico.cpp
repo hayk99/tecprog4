@@ -8,7 +8,3 @@
 Generico::Generico(const double volumen) : Contenido(volumen) {}
 
 Generico::~Generico() {}
-
-string Generico::devolverNombre (){
-	return nombre;
-}

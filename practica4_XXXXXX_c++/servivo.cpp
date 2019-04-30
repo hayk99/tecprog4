@@ -5,7 +5,7 @@
  */
 #include "servivo.h"
 
-SerVivo::SerVivo(const double volumen, const string& nombre) : Contenido(volumen), SerVivo::nombre(nombre) {}
+SerVivo::SerVivo(const double volumen, const string& nombre) : Contenido(volumen), nombre(nombre) {}
 
 SerVivo::~SerVivo() {}
 

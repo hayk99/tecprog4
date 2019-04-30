@@ -7,11 +7,8 @@
 #include <string>
 #include <iostream>
 #include <list>
-#include "camion.h"
-#include "producto.h"
-#include "contenedor.h"
-#include "toxico.h"
-#include "servivo.h"
+
+#include "almacen.h"
 
 using namespace std;
 
@@ -21,8 +18,29 @@ protected:
 	double capacidad;
 	list <T> almacenado;
 public:
-	Almacen(const double capacidad);
+	Almacen(double capacidad);
 	~Almacen();
 	double devolverCapacidad();
-	bool guardar(const T& elemento); 
+	bool guardar(T& elemento); 
 };
+
+template <typename T>
+Almacen<T>::Almacen(double capacidad) : capacidad(capacidad) {}
+
+template <typename T>
+Almacen<T>::~Almacen() {}
+
+template <typename T>
+double Almacen<T>::devolverCapacidad(){
+	return capacidad;
+}
+
+template <typename T>
+bool Almacen<T>::guardar(T& elemento){
+	if(elemento.devolverVolumen() < capacidad){
+		almacenado.push_back(elemento);
+		capacidad -= elemento.devolverVolumen();
+		return true;
+	}
+	else return false;
+}

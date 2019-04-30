@@ -5,6 +5,7 @@
  */
 #pragma once
 #include "almacen.h"
+#include "generico.h"
 //recibe en el constructor tamaño de camion
 using namespace std;
 

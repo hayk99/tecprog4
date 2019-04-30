@@ -7,13 +7,13 @@ SRCS=main.cc
 CC=g++ -std=c++11
 #CC=clang++ -std=c++11
 
-CFLAGS:=-O3
+CFLAGS:=-O2
 
 OBJS=$(SRCS:.cc=.o)
 
 all: $(PROG)
 
-$(PROG): $(OBJS) almacen.o camion.o contenedor.o producto.o contenido.o servivo.o toxico.o
+$(PROG): $(OBJS) camion.o producto.o contenido.o servivo.o toxico.o generico.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.cc

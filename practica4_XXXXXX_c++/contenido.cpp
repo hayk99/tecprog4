@@ -5,7 +5,7 @@
  */
 #include "contenido.h"
 
-Contenido::Contenido(const double volumen) Contenido::volumen(volumen) {}
+Contenido::Contenido(double volumen) : volumen(volumen) {}
 
 Contenido::~Contenido() {}
 
