@@ -3,8 +3,12 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
-#include "camion.h"
-#include "producto.h"
-#include "contenedor.h"
 #include "toxico.h"
-#include "servivo.h"
+
+Toxico::Toxico(const double volumen, const string& nombre) : Contenido(volumen), Toxico::nombre(nombre) {}
+
+Toxico::~Toxico() {}
+
+string Toxico::devolverNombre (){
+	return nombre;
+}

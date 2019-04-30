@@ -13,7 +13,7 @@ OBJS=$(SRCS:.cc=.o)
 
 all: $(PROG)
 
-$(PROG): $(OBJS) almacen.o camion.o contenedor.o producto.o contenido.o
+$(PROG): $(OBJS) almacen.o camion.o contenedor.o producto.o contenido.o servivo.o toxico.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.cc

@@ -13,7 +13,7 @@ double Almacen::devolverCapacidad(const double capacidad){
 	return capacidad;
 }
 
-bool Almacen::guardar(const Contenido& elemento){
+bool Almacen::guardar(const T& elemento){
 	if(elemento.devolverVolumen() < capacidad){
 		almacenado.push_back(elemento);
 		capacidad -= elemento.devolverVolumen();

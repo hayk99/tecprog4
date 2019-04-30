@@ -3,15 +3,12 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
-#pragma once
+#include "generico.h"
 
-using namespace std;
+Generico::Generico(const double volumen) : Contenido(volumen) {}
 
-class Contenido{
-protected:
-	const double volumen;
-public:
-	Contenido(const double volumen);
-	~Contenido();
-	double devolverVolumen();
-};
+Generico::~Generico() {}
+
+string Generico::devolverNombre (){
+	return nombre;
+}

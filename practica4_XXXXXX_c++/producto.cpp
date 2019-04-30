@@ -5,7 +5,7 @@
  */
 #include "producto.h"
 
-Producto::Producto(const double volumen, const string& nombre) : Contenido(volumen), Producto::nombre(nombre) {}
+Producto::Producto(const double volumen, const string& nombre) : Generico(volumen), Producto::nombre(nombre) {}
 
 Producto::~Producto() {}
 

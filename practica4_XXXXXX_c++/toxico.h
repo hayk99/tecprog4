@@ -1,15 +1,17 @@
- /*
+/*
  * AUTORES: HAYK KOCHARYAN(757715) - JAVIER SALAMERO SANZ (756868)
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
 #pragma once
-#include "almacen.h"
-//recibe en el constructor tamaño de camion
+
+#include "contenido.h"
+
 using namespace std;
 
-class Camion : public Almacen<Generico> {
+class Toxico : public Contenido{
 public:
-	Camion(const double capacidad);
-	~Camion();
+	Toxico(const double volumen);
+	~Toxico();
+	string devolverNombre();
 };

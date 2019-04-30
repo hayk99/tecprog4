@@ -5,6 +5,6 @@
  */
 #include "camion.h"
 
-Camion::Camion(const double capacidad): Almacen(capacidad){}
+Camion::Camion(const double capacidad): Almacen<Generico>(capacidad){}
 
 Camion::~Camion() {}

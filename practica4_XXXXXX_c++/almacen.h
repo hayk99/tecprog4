@@ -7,17 +7,22 @@
 #include <string>
 #include <iostream>
 #include <list>
-#include  "contenido.h"
+#include "camion.h"
+#include "producto.h"
+#include "contenedor.h"
+#include "toxico.h"
+#include "servivo.h"
 
 using namespace std;
 
+template <typename T>
 class Almacen {
 protected:
 	double capacidad;
-	list <Contenido> almacenado;
+	list <T> almacenado;
 public:
 	Almacen(const double capacidad);
 	~Almacen();
 	double devolverCapacidad();
-	bool guardar(const Contenido& elemento); 
+	bool guardar(const T& elemento); 
 };

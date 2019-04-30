@@ -7,8 +7,10 @@
 #include "almacen.h"
 #include "contenido.h"
 //constructor recibe tamaño
+using namespace std;
 
-class Contenedor : public Almacen, public Contenido{
+template <typename T>
+class Contenedor : public Almacen<T>, public Generico{
 public:
 	Contenedor(const double capacidad);
 	~Contenedor();

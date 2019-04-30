@@ -6,14 +6,15 @@
 #pragma once
 // cnstructor Producto(double volumen, const std::string&nombre)
 
-#include "almacen.h"
+#include "generico.h"
 
-class Producto :public Almacen<T>{
+using namespace std;
+
+class Producto : public Generico{
 private:
 	const string nombre;
 public:
-	Producto(double tam, const string& nombre);
+	Producto(const double volumen, const string& nombre);
 	~Producto();
-
-	string devolverNombre(const T& elemento);
+	string devolverNombre();
 };

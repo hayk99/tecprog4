@@ -5,6 +5,6 @@
  */
 #include "contenedor.h"
 
-Contenedor::Contenedor(const double& capacidad): Almacen(capacidad), Contenido(capacidad){}
+Contenedor::Contenedor(const double& capacidad): Almacen<T>(capacidad), Generico(capacidad){}
 
 Contenedor::~Contenedor() {}
