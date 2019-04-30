@@ -7,18 +7,17 @@
 #include <string>
 #include <iostream>
 #include <list>
+#include  "contenido.h"
 
 using namespace std;
 
-
-template<typename T>
 class Almacen {
 protected:
-	double tam;
+	double capacidad;
+	list <Contenido> almacenado;
 public:
-	Almacen();
+	Almacen(const double capacidad);
 	~Almacen();
-	double tamanyo();
-
-	virtual bool guardar(const T& elemento) = 0; 
+	double devolverCapacidad();
+	bool guardar(const Contenido& elemento); 
 };

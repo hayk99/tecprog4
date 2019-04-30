@@ -3,9 +3,10 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
-#include "almacen.h"
+#include "producto.h"
 
-Producto::Producto(const double& tam_): tam(tam_){}
+Producto::Producto(const double volumen, const string& nombre) : Contenido(volumen), Producto::nombre(nombre) {}
+
 Producto::~Producto() {}
 
 string Producto::devolverNombre (){

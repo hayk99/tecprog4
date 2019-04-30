@@ -5,9 +5,21 @@
  */
 #include "almacen.h"
 
-Almacen::Almacen() {}
+Almacen::Almacen(const double capacidad) : Almacen::capacidad(capacidad) {}
+
 Almacen::~Almacen() {}
 
-double Almacen::tamanyo(){
-	return tam;
+double Almacen::devolverCapacidad(const double capacidad){
+	return capacidad;
 }
+
+bool Almacen::guardar(const Contenido& elemento){
+	if(elemento.devolverVolumen() < capacidad){
+		almacenado.push_back(elemento);
+		capacidad -= elemento.devolverVolumen();
+		return true;
+	}
+	else return false;
+}
+
+

@@ -3,8 +3,6 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
+#include "camion.h"
+#include "producto.h"
 #include "contenedor.h"
-
-Contenedor::Contenedor(const double& capacidad): Almacen(capacidad), Contenido(capacidad){}
-
-Contenedor::~Contenedor() {}

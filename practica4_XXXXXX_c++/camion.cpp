@@ -3,11 +3,8 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
-#include "almacen.h"
+#include "camion.h"
 
-Camion::Camion(const double& tam_): tam(tam_){}
+Camion::Camion(const double capacidad): Almacen(capacidad){}
+
 Camion::~Camion() {}
-
-double Camion::guardar(){
-	return tam;
-}

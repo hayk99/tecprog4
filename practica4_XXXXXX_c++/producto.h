@@ -10,7 +10,7 @@
 
 class Producto :public Almacen<T>{
 private:
-	string nombre;
+	const string nombre;
 public:
 	Producto(double tam, const string& nombre);
 	~Producto();

@@ -7,11 +7,8 @@
 #include "almacen.h"
 //recibe en el constructor tamaño de camion
 
-class Camion : public Almacen <T>{
-	list < Almacen <T> > contenido;
+class Camion : public Almacen {
 public:
-	Camion(const double tam);
+	Camion(const double capacidad);
 	~Camion();
-
-	bool guardar(const T& elemento) = 0; 
 };

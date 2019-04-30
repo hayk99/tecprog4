@@ -4,8 +4,7 @@
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
 
-//#include "practica4.h"
-#include "almacen.h"
+#include "practica4.h"
 #include <iostream>
 
 int main(int argc, char** argv)

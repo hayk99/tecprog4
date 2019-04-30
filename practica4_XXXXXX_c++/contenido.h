@@ -3,8 +3,13 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
-#include "contenedor.h"
+#pragma once
 
-Contenedor::Contenedor(const double& capacidad): Almacen(capacidad), Contenido(capacidad){}
-
-Contenedor::~Contenedor() {}
+class Contenido{
+protected:
+	const double volumen;
+public:
+	Contenido(const double volumen);
+	~Contenido();
+	double devolverVolumen();
+};
