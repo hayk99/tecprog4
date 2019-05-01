@@ -3,6 +3,7 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
+
 #include "generico.h"
 
 Generico::Generico(const double volumen) : Contenido(volumen) {}

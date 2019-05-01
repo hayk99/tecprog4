@@ -9,6 +9,6 @@ SerVivo::SerVivo(const double volumen, const string& nombre) : Contenido(volumen
 
 SerVivo::~SerVivo() {}
 
-string SerVivo::devolverNombre (){
+string SerVivo::devolverNombre () const {
 	return nombre;
 }

@@ -15,5 +15,5 @@ private:
 public:
 	Toxico(const double volumen, const string& nombre);
 	~Toxico();
-	string devolverNombre();
+	string devolverNombre() const;
 };

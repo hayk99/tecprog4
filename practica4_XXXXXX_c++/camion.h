@@ -3,10 +3,12 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
+
 #pragma once
+
 #include "almacen.h"
 #include "generico.h"
-//recibe en el constructor tamaño de camion
+
 using namespace std;
 
 class Camion : public Almacen<Generico> {

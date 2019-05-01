@@ -3,9 +3,11 @@
  * PRÁCTICA 4 - TEONOLOGÍA DE LA PROGRAMACIÓN
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
+
 #pragma once
 
 #include <string>
+
 using namespace std;
 
 class Contenido{
@@ -14,5 +16,5 @@ protected:
 public:
 	Contenido(double volumen);
 	~Contenido();
-	double devolverVolumen();
+	double devolverVolumen() const;
 };

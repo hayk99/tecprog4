@@ -10,45 +10,39 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	Camion camion(10);
+	Camion camion(9);
 
 	Contenedor<Generico> contenedor_generico(4);
+	Contenedor<Generico> contenedor_generico2(2);
 	Contenedor<Toxico>   contenedor_toxico(3);
-	Contenedor<SerVivo>  contenedor_servivo(2);
-	Producto             apuntes_tepro(1, "Apuntes de Tecnologia de Programacion");
-	
-	for (int i = 0; i<3; i++){
-		if (!camion.guardar(contenedor_generico)) {
-			cout<<"Camion lleno con contenedor generico"<<endl;
-		}
-		else cout<<"metido crack "<<endl;
+	Contenedor<SerVivo>  contenedor_servivo(6.5);
+
+	Producto producto_rand(1, "producto random");
+	Toxico caca(2, "Caca de vaca");
+	SerVivo bebes(6.5, "Bebes");
+	//contenedor_generico.guardar(bebes); // no compilar
+	if(contenedor_servivo.guardar(bebes)){
+		cout << "guardado" << bebes.devolverNombre() << " " << bebes.devolverVolumen() << endl;
 	}
-	/*
-	if (!camion.guardar(contenedor_toxico))   std::cout<<"Camion lleno con contenedor toxico"<<std::endl;
-	if (!camion.guardar(contenedor_servivo))  std::cout<<"Camion lleno con contenedor de seres vivos"<<std::endl;
-	if (!camion.guardar(apuntes_tepro))       std::cout<<"Camion lleno con apuntes de tepro"<<std::endl;
+	else cout << "no guardado" << endl;
+	//camion.guardar(caca); // no
+	cout << camion.devolverCapacidad() << endl;
+	if(contenedor_generico.guardar(contenedor_generico2)){
+		cout << "guardado" << contenedor_generico2.devolverVolumen() << endl;
+	}
+	else cout << "no guardado" << endl;
+		if(contenedor_generico.guardar(contenedor_generico2)){
+		cout << "guardado " << contenedor_generico2.devolverVolumen() << endl;
+	}
+	else cout << "no guardado" << endl;
 
-	Producto trenzas_almudevar(0.5, "Trenzas de Almudevar");
-	if (!camion.guardar(trenzas_almudevar))   std::cout<<"Camion lleno con trenzas de Almudevar"<<std::endl;
-	contenedor_generico.guardar(trenzas_almudevar);
+	if(contenedor_generico.guardar(contenedor_generico2)){
+		cout << "guardado " << contenedor_generico2.devolverVolumen() << endl;
+	}
+	else cout << "no guardado" << endl;
+	contenedor_toxico.guardar(contenedor_generico2);
 
-	Toxico discos_melendi(1, "Discos de Melendi");
-	// contenedor_generico.guardar(discos_melendi); //Esto no deberia compilar
-	contenedor_toxico.guardar(discos_melendi);
 
-	SerVivo elvis_presley(0.1, "Elvis Presley");
-	//camion.guardar(elvis_presley); //Esto no deberia compilar
-	contenedor_servivo.guardar(elvis_presley);
 
-	Contenedor<Generico> otro_contenedor_generico(1);
-	Contenedor<Toxico>   otro_contenedor_toxico(1);
-	Contenedor<SerVivo>  otro_contenedor_servivo(1);
-	contenedor_generico.guardar(otro_contenedor_generico);
-	contenedor_generico.guardar(otro_contenedor_toxico);
-	contenedor_generico.guardar(otro_contenedor_servivo);
-	//contenedor_generico.guardar(camion); //Esto no deberia compilar
-	//contenedor_toxico.guardar(otro_contenedor_toxico); //Esto no deberia compilar
-	//contenedor_servivo.guardar(otro_contenedor_servivo); //Esto no deberia compilar
-	*/
 }
 

@@ -4,7 +4,6 @@
  * FECHA ÚLTIMA MODIFICACÍÓN: 27 abril 2019
  */
 #pragma once
-// cnstructor Producto(double volumen, const std::string&nombre)
 
 #include "contenido.h"
 
@@ -16,5 +15,5 @@ private:
 public:
 	SerVivo(double volumen, const string& nombre);
 	~SerVivo();
-	string devolverNombre();
+	string devolverNombre() const;
 };

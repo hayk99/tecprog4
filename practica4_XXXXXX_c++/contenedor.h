@@ -8,7 +8,7 @@
 #include "contenedor.h"
 #include "almacen.h"
 #include "generico.h"
-//constructor recibe tamaño
+
 using namespace std;
 
 template <typename T>
